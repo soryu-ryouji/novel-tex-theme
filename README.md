@@ -1,3 +1,7 @@
+<div align=center>
+<img src="./.assets/novel-tex-logo.png">
+</div>
+
 # Novel Tex
 
 > Novel Tex 是基于 [typora-latex-theme](https://github.com/Keldos-Litypora-latex-theme/) 的修改版本，沿用 GPL 3.0 许可证。
