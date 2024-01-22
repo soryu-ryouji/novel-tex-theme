@@ -14,6 +14,12 @@
 4. 增加了代码块线框，使代码块在文档中更加显眼
 5. 更改了默认字体
 
+NovelTex使用思源宋体作为文档字体、思源黑体作为 UI 字体、JetBrainsMono 作为代码字体
+
+思源宋体：https://github.com/adobe-fonts/source-han-serif/releases/tag/2.002R
+思源黑体：https://github.com/adobe-fonts/source-han-sans/releases/tag/2.004R
+JetBrainsMono：https://www.jetbrains.com/lp/mono/
+
 **Screenshots**
 
 ![Novel Tex](./.assets/novel-tex_00.png)
