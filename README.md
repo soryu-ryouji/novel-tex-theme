@@ -4,7 +4,7 @@
 
 # Novel Tex
 
-> Novel Tex 是基于 [typora-latex-theme](https://github.com/Keldos-Litypora-latex-theme/) 的修改版本，沿用 GPL 3.0 许可证。
+> Novel Tex 是基于 [typora-latex-theme](https://github.com/Keldos-Li/typora-latex-theme) 的修改版本，沿用 GPL 3.0 许可证。
 
 主要修改：
 
