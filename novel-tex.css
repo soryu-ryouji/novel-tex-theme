@@ -370,8 +370,8 @@ li code {
 /* == 目录 == */
 .md-toc {
   font-size: var(--toc-font-size);
-  border: 1px solid #ccc;                                 /* 整个代码块的边框样式 */
-  border-radius: 0px;                                       /*可选：添加圆角 */
+  /* border: 1px solid #ccc;                                 /* 整个代码块的边框样式 */
+  /* border-radius: 0px;                                     /*  可选：添加圆角 */
 }
 
 .md-toc-content {
@@ -389,11 +389,67 @@ li code {
   color: var(--text-color) !important;
 }
 
-.md-toc-h2,
+
+.md-toc-h2 {
+  font-size: var(--toc-font-size);
+  font-family: var(--toc-font), var(--base-Latin-font), var(--base-Chinese-font), serif;
+  font-weight: var(--strong-weight);
+}
 .md-toc-h3,
 .md-toc-h4,
 .md-toc-h5,
 .md-toc-h6 {
   font-size: var(--toc-font-size);
   font-family: var(--toc-font), var(--base-Latin-font), var(--base-Chinese-font), serif;
+}
+
+
+/* 目录标题前 */
+.md-toc-content {
+  .md-toc-h1 {
+    content: "";
+    counter-reset: toc-h1;
+  }
+  .md-toc-h2 {
+    counter-reset: toc-h3;
+  }
+  .md-toc-h3 {
+    counter-reset: toc-h4;
+  }
+  .md-toc-h4 {
+    counter-reset: toc-h5;
+  }
+  .md-toc-h5 {
+    counter-reset: toc-h6;
+  }
+  .md-toc-h2:before {
+    counter-increment: toc-h2;
+    content: "";
+    margin-right: 2em;
+    font-weight: var(--strong-weight);
+  }
+  .md-toc-h3:before {
+    counter-increment: toc-h3;
+    content: "";
+    margin-left: 4em;
+    margin-right: 0.5em;
+  }
+  .md-toc-h4:before {
+    counter-increment: toc-h4;
+    content: "";
+    margin-left: 6em;
+    margin-right: 0.5em;
+  }
+  .md-toc-h5:before {
+    counter-increment: toc-h5;
+    content: "";
+    margin-left: 8em;
+    margin-right: 0.5em;
+  }
+  .md-toc-h6:before {
+    counter-increment: toc-h6;
+    content: "";
+    margin-left: 10em;
+    margin-right: 0.5em;
+  }
 }
