@@ -406,6 +406,7 @@ li code {
 
 /* 目录标题前 */
 .md-toc-content {
+  /* 默认隐藏了 h4-h6 的标题显式，需要显式就将display: none取消 */
   .md-toc-h1 {
     content: "";
     counter-reset: toc-h1;
@@ -417,9 +418,15 @@ li code {
     counter-reset: toc-h4;
   }
   .md-toc-h4 {
+    display: none;
     counter-reset: toc-h5;
   }
   .md-toc-h5 {
+    display: none;
+    counter-reset: toc-h6;
+  }
+  .md-toc-h6 {
+    display: none;
     counter-reset: toc-h6;
   }
   .md-toc-h2:before {
