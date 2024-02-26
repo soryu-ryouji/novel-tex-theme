@@ -1,0 +1,530 @@
+@charset "UTF-8";
+@import "novel-tex/codeblock-dark.css";
+
+/*
+NovelTex 基于Typora-Latex进行修改，
+Typora-Latex：https://github.com/Keldos-Li/typora-latex-theme
+
+字体链接
+思源宋体：https://github.com/adobe-fonts/source-han-serif/releases/tag/2.002R
+思源黑体：https://github.com/adobe-fonts/source-han-sans/releases/tag/2.004R
+JetBrainsMono：https://www.jetbrains.com/lp/mono/
+*/
+
+/*
+em 单位为一个正文字符（--base-font-size）大小，
+例如，如果您设置 --base-font-size 为 9.5pt，那么 1.05em = 1.05*9.5pt ≈ 10pt。下面的标题字体等设置也遵循该规则。
+这样，您就可以仅通过调整基准字体大小，而动态对其他元素大小做出调整。
+当然，您也可以直接设置以pt或px为单位的数值，将元素的大小固定下来，如 --quote-font-size: 10pt;
+*/
+
+:root {
+  /* == 字体设置 == */
+  --base-Latin-font: "Source Han Serif SC";
+  --base-Chinese-font: "Source Han Serif SC", "Source Han Serif TC";
+  --base-font-size: 1.15em;
+  --quote-font: "Source Han Serif SC";                    /* 引言字体 */
+  --quote-font-size: 1em;
+  --ui-font: "Source Han Snas SC";                        /* 侧边栏字体 */
+  --code-font: "JetBrains Mono",var(--base-Chinese-font); /* 代码字体（代码中的中文会调用 ui-font） */
+  --code-font-size: 0.95em;
+  --code-inline-font-size: 0.95em;
+  --sourceMode-font: var(--base-Chinese-font);            /* source mode 字体 */
+  --toc-font: "";                                         /* 目录字体（默认调用 base-font） */
+  --toc-font-size: "";                                    /* 默认调用 base-font-size */
+  --math-font-size: 1em;                                  /* 公式字体 */
+  --table-title-font: "";                                 /* 表格字体（默认调用 heading-font） */
+  --table-font: "";
+
+  --heading-Latin-font: var(--base-Latin-font);           /* 标题字体（总设置）*/
+  --heading-Chinese-font: var(--base-Chinese-font);
+  --h1-Chinese-font: var(--base-Chinese-font);            /* h1字体 */
+  --h1-font-size: 1.9em;
+  --h2-Chinese-font: var(--base-Chinese-font);            /* h2字体 */
+  --h2-font-size: 1.5em;
+  --h3-Chinese-font: var(--base-Chinese-font);            /* h3字体 */
+  --h3-font-size: 1.25em;
+  --h4-Chinese-font: var(--base-Chinese-font);            /* h4字体 */
+  --h4-font-size: 1.15em;
+  --h5-Chinese-font: var(--base-Chinese-font);            /* h5字体 */
+  --h5-font-size: 1.10em;
+  --h6-Chinese-font: var(--base-Chinese-font);            /* h6字体 */
+  --h6-font-size: 1.10em;
+
+  --strong-weight: 900;                                   /* 粗体样式设置（normal: 400，bold: 700，heavy: 900） */
+  --base-line-height: 1.618em;                            /* 基础行距 */
+  --set-margin: 1.8cm 2cm 1.8cm 2cm !important;           /* 打印页边距 */
+  --toc-show-title: none;                                 /* 目录中是否显示一级标题 */
+  --link-color-dark: #8bb1f9;                           /* 超链接颜色 */
+
+  --select-text-bg-color: #727272;
+  --select-text-font-color: #161616;
+  --active-file-bg-color:#727272;                       /*文件栏文本*/
+  /* --active-file-text-color:#161616; */
+  --sidebar-bg-color: #282828;                          /*Typora侧边栏颜色*/
+  --bg-color: #1e1e1e;                                  /*编辑区颜色*/
+  --bg-color-shader: #1e1e1e;                           /*编辑区阴影*/
+  --text-color: #dcdcdc;                                /*普通文本颜色*/
+  --title-color: #dddddd;
+  --toc-font-color: var(--text-color);                    /*目录文本颜色*/
+  --code-font-color: #dddddd;                           /*代码字体颜色*/
+  --border-color: #727272;                              /*边框颜色*/
+
+  /* == mermaid 设置 == */
+  --mermaid-theme: neutral;                               /* base, dark, forest, neutral, night */
+  --mermaid-sequence-numbers: off;                        /* "off" "on" */
+  --mermaid-flowchart-curve: linear                       /* "linear" "basis" */;
+  --mermaid-font-family: var(--base-Chinese-font);
+  --mermaid--gantt-left-padding: 75;
+}
+
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.typora-node #typora-sidebar {
+  color: var(--text-color);
+  background-color: var(--sidebar-bg-color);
+}
+
+#typora-quick-open {
+  background-color: #282828;
+}
+#typora-quick-open input {
+  background-color: #282828;
+  border: 0;
+  border-bottom: 1px solid grey;
+}
+
+/* 插入图片后弹出的框 */
+.context-menu,
+#spell-check-panel,
+#footer-word-count-info {
+  background-color: #282828;
+}
+
+/* 鼠标悬停到按钮上后的悬停文本框 */
+.ty-tooltip {
+  background: #282828;
+  color: #fff;
+}
+
+/* 以下三段与 Unibody UI 模式的适配有关 */
+.megamenu-content,
+.megamenu-opened header {
+  background: var(--bg-color);
+}
+
+.megamenu-menu {
+  background-color: #282828;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+  background-color: #282828;
+}
+
+/* typora UI 编辑页面，在宽度较小时的底栏 */
+footer.ty-footer {
+  border-top: 1px solid #222;
+}
+
+#write {
+  font-family: var(--base-Latin-font), var(--base-Chinese-font), serif;
+  font-size: var(--base-font-size);
+  max-width: 26cm;
+  background-color: var(--bg-color);
+}
+
+#write .md-math-block,
+#write .md-rawblock,
+#write p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: var(--text-color);
+}
+#write p {
+  text-align: left;
+  line-height: var(--base-line-height);
+}
+#write a {
+  color: var(--link-color-dark);
+}
+
+hr {
+  border-top: solid 1px #ddd;
+  margin-top: 1.8em;
+  margin-bottom: 1.8em;
+}
+
+img {
+  page-break-inside: avoid;                               /* 避免图片在导出时被断开 */
+}
+
+strong {
+  font-weight: var(--strong-weight);
+}
+
+@media screen {
+  #write {
+    padding: var(--set-margin);
+    border: 1px solid var(--border-color);
+  }
+}
+.MathJax {
+  font-size: var(--math-font-size);
+}
+
+/* typora 编写模式 */
+#typora-source {
+  font-family: var(--sourceMode-font), var(--code-font), var(--ui-font), monospace;
+  line-height: 2em;
+}
+
+.sidebar-content {
+  /* 侧边栏的字体修改 */
+  font-family: var(--ui-font);
+  list-style: none;
+}
+
+pre.md-meta-block {
+  /* 元数据（如 YAML front matter）的背景框 */
+  background: var(--bg-color);
+  padding: 1.4em;
+  font-family: var(--code-font), var(--ui-font), monospace;
+  font-size: 0.8em;
+}
+
+#write {
+  counter-reset: h2 0 h3 0 h4 0 h5 0 h6 0;
+}
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+  font-weight: bold;
+  page-break-after: avoid !important;
+}
+#write h1 {
+  font-family: var(--heading-Latin-font), var(--h1-Chinese-font), serif;
+  text-align: center;
+  column-span: all;
+  font-size: var(--h1-font-size);
+}
+#write h2 {
+  font-family: var(--heading-Latin-font), var(--h2-Chinese-font), serif;
+  font-size: var(--h2-font-size);
+}
+#write h3 {
+  font-family: var(--heading-Latin-font), var(--h3-Chinese-font), serif;
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-font-size);
+}
+#write h4 {
+  font-family: var(--heading-Latin-font), var(--h4-Chinese-font), serif;
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-font-size);
+}
+#write h5 {
+  font-family: var(--heading-Latin-font), var(--h5-Chinese-font), serif;
+  font-size: var(--h5-font-size);
+  line-height: var(--h5-font-size);
+}
+#write h6 {
+  font-family: var(--heading-Latin-font), var(--h6-Chinese-font), serif;
+  font-size: var(--h6-font-size);
+  line-height: var(--h5-font-size);                       /* 没有写错，为了避免行距太小才这么写 */
+}
+
+
+.footnotes {
+  /* 参考文献（脚注）块 */
+  font-size: 0.95em;
+}
+
+.footnotes-area .footnote-line {
+  color: var(--text-color);
+}
+.footnotes-area hr {
+  border: 0;
+  color: var(--text-color);
+}
+
+/* 无序列表 */
+ul {
+  list-style: disc;
+}
+ul ul {
+  /*list-style: circle;*/
+  /* 请勿删除“–”后的空格, 他们对缩进有一定影响, 下同 */
+  list-style: "–   ";
+}
+ul ul ul {
+  list-style: "◦  ";
+}
+
+/* 有序列表 */
+ol {
+  list-style: decimal;
+}
+ol ol {
+  counter-reset: liist;
+  list-style: none;
+}
+ol ol li {
+  counter-increment: liist;
+  position: relative;
+}
+ol ol li::before {
+  content: "(" counter(liist,lower-alpha) ")";
+  position: absolute;
+  left: -1.8em;
+}
+ol ol ol {
+  counter-reset: liiist;
+  list-style: none;
+  margin: 0;
+}
+ol ol ol li {
+  counter-increment: liiist;
+  position: relative;
+}
+ol ol ol li::before {
+  content: counter(liiist,lower-roman) ".";
+  align-self: flex-end;
+  position: absolute;
+  left: -4.5em;
+  /* -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;*/
+  /* 为了让项目编号是重新用句点对齐而不是左对齐 */
+  width: 4em;
+  text-align: right;
+}
+
+li {
+  position: relative;
+}
+
+ol, ul {
+  padding-inline-start: 2em;
+}
+
+/* task列表 */
+.md-task-list-item > input {
+  margin-top: 0.42em;
+  margin-left: -1.5em;
+  width: 1em !important;
+  height: 1em !important;
+}
+
+#write table {
+  /* 三线表第一条线宽度 */
+  border-top: 1.2pt solid;
+  /* 三线表第二条线宽度 */
+  border-bottom: 1.2pt solid;
+  font-family: var(--table-font), var(--base-Latin-font), var(--base-Chinese-font), serif;
+  /* font-size: var(--base-font-size); */
+  text-align: center;
+  page-break-inside: avoid;
+  border-spacing: 6px;
+  /* 自动布局表格宽度，如果有时内容太紧建议直接加空格吧，我自己看不惯和页面等宽的大表格 */
+  width: auto;
+  /* 使表格默认居中；虽然这个代码不好，但好像没别的实现办法 */
+  margin: 0 auto;
+}
+#write table td {
+  padding: 2px;
+}
+#write table tr {
+  padding: 2px;
+}
+#write th {
+  padding: 0px 6px;
+}
+#write thead {
+  /* 表格标题（首行）样式 */
+  /* 三线表表头的线 */
+  border-bottom: 0.5pt solid;
+  font-family: var(--table-title-font), var(--heading-Latin-font), var(--heading-Chinese-font), serif !important;
+  /* font-size: var(--base-font-size); */
+  font-weight: var(--strong-weight);
+}
+
+
+/* == 引言 == */
+
+/* 一个>的引言仅为两字符缩进，使用>>的引言为传统引言样式，具有左竖线、左缩进 */
+blockquote {
+  font-style: normal;
+  font-family: var(--quote-font), var(--base-Latin-font), var(--base-Chinese-font), -apple-system, serif;
+  font-size: var(--quote-font-size);
+  /* border-left: 1px solid black; */
+  padding-left: 2em;                                      /* 文字离左边框的距离 */
+  padding-right: 2em;                                     /* 左边框离页面边的距离 */
+  margin-left: 0;
+
+}
+
+/* blockquote p:first-child {
+  padding-top: 1ch;
+}
+
+blockquote p:last-child {
+  padding-bottom: 1ch;
+} */
+
+/* blockquote blockquote {
+  border-left: 4px solid #b3b3b3;
+  padding-left: calc(2ch - 4px);
+  padding-right: 0;
+  margin-left: -4px;
+  border-radius: 0;
+} */
+
+/* == 代码 == */
+code {
+  /* 行内代码 */
+  font-family: var(--code-font), var(--ui-font), monospace;
+  font-size: var(--base-font-size);
+}
+
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code,
+p code,
+li code {
+  color: var(--code-font-color);
+  background-color: var(--bg-color);
+  box-shadow: 0 0 1px 1px var(--bg-color-shader);                        /* 阴影 */
+  font-family: var(--code-font);
+  font-size: var(--code-inline-font-size);
+  box-sizing: border-box;
+  border-right: 0px;
+  margin: 0 2px 0 2px;
+  padding: 1px;
+  border-radius: 0px;                                       /* 圆角 */
+}
+
+
+/* 代码块 */
+.md-fences {
+  font-size: var(--code-font-size);
+  border: 1px solid var(--border-color);                              /* 代码块的边框样式 */
+  padding: 10px;                                            /* 代码与边框的距离 */
+  border-radius: 0px;                                       /* 边框圆角 */
+  background-color: var(--bg-color);
+  color: var(--code-font-color);
+}
+.md-fences,
+.CodeMirror pre {
+  font-size: var(--code-font-size);
+}
+
+/* .CodeMirror-wrap {
+  padding: 10px;
+  font-size: var(--code-font-size);
+} */
+
+.CodeMirror-code pre {
+  font-family: var(--code-font), var(--ui-font), monospace;
+}
+
+/* 改变光标的颜色，在黑暗背景下能显示*/
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid #ffffff;
+  z-index: 3;
+}
+
+/* == TOC ==*/
+.md-toc {
+  font-size: var(--toc-font-size);
+  /* border: 1px solid #ccc;                                 /* 整个代码块的边框样式 */
+  border-radius: 1px;                                        /*  可选：添加圆角 */
+}
+
+.md-toc-content {
+  margin-left: 2em;
+  counter-reset: toc-h2 toc-h3 toc-h4;
+  page-break-after: always;
+}
+.md-toc-inner {
+  margin-left: 0 !important;
+  color: var(--toc-font-color) !important;
+}
+
+.md-toc-item {
+  color: var(--toc-font-color) !important;
+}
+.md-toc-h2 {
+  font-size: var(--toc-font-size);
+  font-family: var(--toc-font), var(--base-Latin-font), var(--base-Chinese-font), serif;
+  font-weight: var(--strong-weight);
+}
+.md-toc-h3,
+.md-toc-h4,
+.md-toc-h5,
+.md-toc-h6 {
+  font-size: var(--toc-font-size);
+  font-family: var(--toc-font), var(--base-Latin-font), var(--base-Chinese-font), serif;
+}
+
+
+/*=== TOC 标题前 ===*/
+.md-toc-content {
+  /* 默认隐藏了 h4-h6 的标题显式，需要显式就将display: none取消 */
+  .md-toc-h1 {
+    content: "";
+    counter-reset: toc-h1;
+  }
+  .md-toc-h2 {
+    counter-reset: toc-h3;
+  }
+  .md-toc-h3 {
+    counter-reset: toc-h4;
+  }
+  .md-toc-h4 {
+    display: none;
+    counter-reset: toc-h5;
+  }
+  .md-toc-h5 {
+    display: none;
+    counter-reset: toc-h6;
+  }
+  .md-toc-h6 {
+    display: none;
+    counter-reset: toc-h6;
+  }
+  .md-toc-h2:before {
+    counter-increment: toc-h2;
+    content: "";
+    margin-right: 2em;
+    font-weight: var(--strong-weight);
+  }
+  .md-toc-h3:before {
+    counter-increment: toc-h3;
+    content: "";
+    margin-left: 4em;
+    margin-right: 0.5em;
+  }
+  .md-toc-h4:before {
+    counter-increment: toc-h4;
+    content: "";
+    margin-left: 6em;
+    margin-right: 0.5em;
+  }
+  .md-toc-h5:before {
+    counter-increment: toc-h5;
+    content: "";
+    margin-left: 8em;
+    margin-right: 0.5em;
+  }
+  .md-toc-h6:before {
+    counter-increment: toc-h6;
+    content: "";
+    margin-left: 10em;
+    margin-right: 0.5em;
+  }
+}
