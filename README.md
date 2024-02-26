@@ -26,10 +26,18 @@ JetBrainsMono：https://www.jetbrains.com/lp/mono/
 
 ![Novel Tex](./.assets/novel-tex_00.png)
 
+![Novel Tex](./.assets/novel-tex-dark_00.png)
+
 ![Novel Tex](./.assets/novel-tex_01.png)
+
+![Novel Tex](./.assets/novel-tex-dark_01.png)
 
 ![Novel Tex](./.assets/novel-tex-code.png)
 
+![Novel Tex](./.assets/novel-tex-dark-code.png)
+
 ![Novel Tex](./.assets/novel-tex-math.png)
+
+![Novel Tex](./.assets/novel-tex-dark-math.png)
 
 ![Novel Tex](./.assets/novel-tex-mermaid.png)
