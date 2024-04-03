@@ -1,5 +1,5 @@
 <div align=center>
-<img src="./.assets/novel-tex-logo.png">
+    <img src="./.assets/novel-tex-logo.png">
 </div>
 
 # Novel Tex
@@ -18,9 +18,7 @@ NovelTex 使用思源黑体作为文档中文字体、Arial 作为文档英文�
 
 思源黑体：https://github.com/adobe-fonts/source-han-sans/releases/download/2.004R/SourceHanSansSC.zip
 
-PS: Source Han Sans SC
-
-JetBrainsMono：https://www.jetbrains.com/lp/mono/
+JetBrainsMono：https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip
 
 **Screenshots**
 
