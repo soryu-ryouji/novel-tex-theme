@@ -1,0 +1,11 @@
+:root {
+    /* == mermaid 设置 == */
+    /* base, dark, forest, neutral, night */
+    --mermaid-theme: neutral;
+    /* "off" "on" */
+    --mermaid-sequence-numbers: off;
+    /* "linear" "basis" */
+    --mermaid-flowchart-curve: linear;
+    --mermaid-font-family: var(--base-Chinese-font);
+    --mermaid--gantt-left-padding: 75;
+  }
