@@ -10,6 +10,8 @@
 
   --active-file-bg-color: rgb(192, 192, 192);
   --active-file-text-color: var(--text-color);
+  --item-hover-bg-color: var(--active-file-bg-color);
+  --item-hover-text-color: var(--active-file-text-color);
 
   --link-color: #7E8B92;
   --li-code-bg-color: rgb(238, 238, 238);
