@@ -8,9 +8,12 @@
   --bg-color: white;
   --border-color: black;
 
+  /*选中文本样式*/
   --active-file-bg-color: rgb(192, 192, 192);
   --active-file-text-color: var(--text-color);
 
   --link-color: #7E8B92;
+  --code-bg-color: rgb(238, 238, 238);
   --li-code-bg-color: rgb(238, 238, 238);
+  --sidebar-bg-color: rgb(238, 238, 238)
 }
