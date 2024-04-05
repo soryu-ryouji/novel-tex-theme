@@ -3,7 +3,6 @@
 @import "./novel-tex/light/code-light.css";
 
 :root {
-  --text-color: black;
   --primary-btn-text-color: black;
   --bg-color: white;
   --border-color: black;
