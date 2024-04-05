@@ -20,7 +20,7 @@ NovelTex 使用思源黑体作为文档中文字体、Arial 作为文档英文�
 
 ## 开发指南
 
-所有基础性的配置全部放入`novel-tex/basic/`中，所有与明暗配置相关的内容放入`dark/`与`light/`中，放在根目录的主题文件只用于修改颜色变量。
+所有基础性的配置全部放入`novel-tex/basic/`中，所有与明暗配置相关的内容放入`novel-tex/dark/`与`novel-tex/light/`中，放在根目录的主题文件只用于修改颜色变量。
 
 ```shell
 theme/
@@ -34,7 +34,11 @@ theme/
 └─novel-tex-n-l.css
 ```
 
-**Screenshots**
+## Screenshots
+
+> 通过身边使用该主题的朋友反馈，主题样式会不定期更新
+> 
+> 文档中的界面预览图与实际安装后的界面不保证百分百相同（有空时会上传新的预览图）
 
 ![Novel Tex](./.assets/novel-tex_00.png)
 
