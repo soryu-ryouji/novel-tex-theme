@@ -1,0 +1,24 @@
+@import "../basic/basic-code.css";
+
+:root {
+    --code-linenumber-color: grey;
+    --code-keyword: #f480ff;
+    --code-operator: #ffffff;
+    --code-variable: #82B1FF;
+    --code-variable-2: #80CBC4;
+    --code-variable-3: #82B1FF;
+    --code-builtin: #DECB6B;
+    --code-atom: #F77669;
+    --code-number: #F77669;
+    --code-def: #44c9b0;
+    --code-string: #C3E88D;
+    --code-string-2: #80CBC4;
+    --code-comment: rgb(0, 218, 0);
+    --code-tag: #80CBC4;
+    --code-meta: #80CBC4;
+    --code-attribute: #FFCB6B;
+    --code-property: #80CBAE;
+    --code-qualifier: #DECB6B;
+    --code-error: rgb(255, 255, 255);
+    --code-error-bg: #EC5F67;
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@import "./novel-tex/basic/base-config.css";
+@import "./novel-tex/dark/code-dark.css";
+
+:root {
+  --link-color: grey;
+  --li-code-bg-color: rgb(73, 73, 73);
+  --bg-color: rgb(43, 43, 43);
+  --sidebar-bg-color:rgb(51, 51, 51);
+  --code-bg-color: rgb(51, 51, 51);
+}

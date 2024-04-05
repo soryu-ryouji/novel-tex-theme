@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import "./novel-tex/basic/base-config.css";
+@import "./novel-tex/light/code-light.css";
+
+:root {
+  --text-color: black;
+  --primary-btn-text-color: black;
+  --bg-color: white;
+  --border-color: black;
+
+  --active-file-bg-color: #cccccc;
+  --active-file-text-color: #333333;
+  --link-color: #7E8B92;
+  --li-code-bg-color: rgb(238, 238, 238);
+}

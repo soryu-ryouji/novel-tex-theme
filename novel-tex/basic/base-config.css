@@ -1,27 +1,29 @@
 @import "./md-toc.css";
 @import "./table.css";
 @import "./ui.css";
+@import "./basic-mermaid.css";
 
 :root {
     /* == 字体设置 == */
     --base-Latin-font: "Arial";
     --base-Chinese-font: "Microsoft YaHei";
     --base-font-size: 1.15em;
-    /* 引言字体 */
+
+    /* 引言设置 */
     --quote-font: "Source Han Sans SC";
     --quote-font-size: 1em;
-    /* 代码字体（代码中的中文会调用 ui-font） */
-    --code-font: "JetBrains Mono", var(--base-Chinese-font);
-    --code-font-size: 0.95em;
-    --code-inline-font-size: 0.95em;
-    /* source mode 字体 */
-    --sourceMode-font: var(--base-Chinese-font);
+
+    /* 源代码模式设置 */
+    --sourceMode-font: var(--base-Latin-font), var(--base-Chinese-font);
+
     /* 目录字体（默认调用 base-font） */
     --toc-font: "";
     /* 默认调用 base-font-size */
     --toc-font-size: var(--base-font-size);
+
     /* 公式字体 */
     --math-font-size: 1em;
+
     /* 表格字体（默认调用 heading-font） */
     --table-title-font: "";
     --table-font: "";
@@ -51,23 +53,6 @@
     /* 目录中是否显示一级标题 */
     --toc-show-title: none;
 
-    /*文件栏文本*/
-    --select-text-bg-color: #727272;
-    --select-text-font-color: #161616;
-
-    /*文件树或文件列表中当前项的背景色*/
-    --active-file-bg-color: #cfcfcf;
-    --active-file-text-color: #161616;
-    --active-file-border-color: var(--active-file-bg-color);
-
-    /*边栏等的边框*/
-    --window-border: 1px solid var(--bg-color);
-    /*Typora侧边栏颜色*/
-    --sidebar-bg-color: var(--bg-color);
-    /*编辑区颜色*/
-    --bg-color: #1e1e1e;
-    /*编辑区阴影*/
-    --bg-color-shader: var(--bg-color);
     /*普通文本颜色*/
     --text-color: #dcdcdc;
     --title-color: #dddddd;
@@ -77,8 +62,6 @@
     /*代码字体颜色*/
     --code-font-color: var(--text-color);
 
-    /*边框颜色*/
-    --border-color: #727272;
     /* 超链接颜色 */
     --link-color: #7E8B92;
 
@@ -86,27 +69,6 @@
     --md-char-color: #C7C5C5;
     /*改变元内容的颜色，例如 markdown 中的图像文本和链接地址*/
     --meta-content-color: #5b808d;
-
-    /*主按钮的颜色*/
-    --primary-color: #428bca;
-    --primary-btn-border-color: #285e8e;
-    --primary-btn-text-color: #fff;
-
-    /*改变边栏颜色*/
-    --side-bar-bg-color: var(--bg-color);
-    /*鼠标悬停时控件项的背景，如侧边栏中的菜单*/
-    --item-hover-bg-color: rgba(229, 229, 229, 0.59);
-    --item-hover-text-color: inherit;
-}
-
-.typora-node #typora-sidebar {
-    color: var(--text-color);
-    background-color: var(--sidebar-bg-color);
-}
-
-
-#typora-quick-open {
-    background-color: var(--bg-color);
 }
 
 body {
@@ -128,10 +90,6 @@ strong {
         padding: var(--set-margin);
         border: 1px solid var(--border-color);
     }
-}
-
-.MathJax {
-    font-size: var(--math-font-size);
 }
 
 pre.md-meta-block {
@@ -266,60 +224,4 @@ hr {
     border-top: solid 1px var(--bg-color);
     margin-top: 1.8em;
     margin-bottom: 1.8em;
-}
-
-
-/* 代码块 */
-
-code {
-    /* 行内代码 */
-    font-family: var(--code-font), var(--ui-font), monospace;
-    font-size: var(--base-font-size);
-}
-
-h1 code,
-h2 code,
-h3 code,
-h4 code,
-h5 code,
-h6 code,
-p code,
-li code {
-    color: var(--code-font-color);
-    background-color: var(--bg-color);
-    box-shadow: 0 0 1px 1px var(--bg-color-shader);
-    font-family: var(--code-font);
-    font-size: var(--code-inline-font-size);
-    box-sizing: border-box;
-    border-right: 0px;
-    margin: 0 2px 0 2px;
-    padding: 1px;
-    border-radius: 0px;
-}
-
-.md-fences {
-    font-size: var(--code-font-size);
-    border: 1px solid var(--border-color);
-    padding: 10px;
-    border-radius: 0px;
-}
-
-.md-fences,
-.CodeMirror pre {
-    font-size: var(--code-font-size);
-}
-
-/* .CodeMirror-wrap {
-    padding: 10px;
-    font-size: var(--code-font-size);
-  } */
-
-.CodeMirror-code pre {
-    font-family: var(--code-font), var(--ui-font), monospace;
-}
-
-/* 改变光标的颜色，在黑暗背景下能显示*/
-.CodeMirror div.CodeMirror-cursor {
-    border-left: 1px solid var(--text-color);
-    z-index: 3;
 }

@@ -1,5 +1,4 @@
 :root {
-    /* == mermaid 设置 == */
     /* base, dark, forest, neutral, night */
     --mermaid-theme: neutral;
     /* "off" "on" */
