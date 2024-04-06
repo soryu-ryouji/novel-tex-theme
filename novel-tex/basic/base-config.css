@@ -52,10 +52,11 @@
     --set-margin: 1.8cm 2cm 1.8cm 2cm !important;
     /* 目录中是否显示一级标题 */
     --toc-show-title: none;
-
+    
     /*普通文本颜色*/
     --text-color: rgb(180, 180, 180);
     --title-text-color: rgb(240, 240, 240);
+    --strong-text-color: var(--text-color);
 
     /*目录文本颜色*/
     --toc-font-color: var(--text-color);
@@ -83,6 +84,7 @@ img {
 
 strong {
     font-weight: var(--strong-weight);
+    color: var(--strong-text-color);
 }
 
 @media screen {
