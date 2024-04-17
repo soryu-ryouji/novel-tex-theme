@@ -34,6 +34,15 @@ theme/
 └─novel-tex-n-l.css
 ```
 
+| variable            | Description             | Default Value  |
+| ------------------- | ----------------------- | -------------- |
+| --bg-color          | Background color        | Black          |
+| --code-bg-color     | Code block border color | --bg-color     |
+| --border-color      | Default border color    | White          |
+| --code-border-color | Code block border color | --border-color |
+| --body-border-color | Write body border color | --border-color |
+
+
 ## Screenshots
 
 > 通过身边使用该主题的朋友反馈，主题样式会不定期更新
