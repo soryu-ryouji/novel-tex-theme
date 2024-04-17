@@ -11,6 +11,7 @@
 
     /*边框颜色*/
     --border-color: #727272;
+    --body-border-color: var(--border-color);
 
     /*文件树或文件列表中当前项的背景色*/
     --active-file-bg-color: var(--select-text-bg-color);

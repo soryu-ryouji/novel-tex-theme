@@ -90,7 +90,7 @@ strong {
 @media screen {
     #write {
         padding: var(--set-margin);
-        border: 1px solid var(--border-color);
+        border: 1px solid var(--body-border-color);
     }
 }
 
