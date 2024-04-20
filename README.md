@@ -14,9 +14,27 @@
 4. 增加了代码块线框，使代码块在文档中更加显眼
 5. 更改了默认字体
 
-NovelTex 使用思源黑体作为文档中文字体、Arial 作为文档英文字体、微软雅黑作为 UI 字体、Consolas 作为代码字体
+NovelTex 使用思源黑体作为文档中文正文、思源宋体作为文章引文字体、Arial 作为文档英文字体、微软雅黑作为 UI 字体、Consolas 作为代码字体
 
 思源黑体：https://github.com/adobe-fonts/source-han-sans/releases/download/2.004R/SourceHanSansSC.zip
+
+思源宋体：https://github.com/adobe-fonts/source-han-serif/releases/download/2.002R/09_SourceHanSerifSC.zip
+
+## 主题版本介绍
+
+`Novel Tex` 是文章边缘带有线框的版本。
+
+`Novel Pure` 是文章边缘不带有线框的版本。
+
+### 主题颜色
+
+| Name | Description  |
+| ---- | ------------ |
+| FD   | Full Dark    |
+| ND   | Normal Dark  |
+| FL   | Full Light   |
+| NL   | Normal Lignt |
+
 
 ## 开发指南
 
