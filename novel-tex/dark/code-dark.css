@@ -21,4 +21,6 @@
     --code-qualifier: #DECB6B;
     --code-error: rgb(255, 255, 255);
     --code-error-bg: #EC5F67;
+
+    --mermaid-theme: dark;
 }
