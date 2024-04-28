@@ -3,6 +3,7 @@
 @import "./novel-tex/dark/code-dark.css";
 
 :root {
+  /* Novel Tex Full Dark */
   --bg-color: rgb(34, 34, 34);
   --sidebar-bg-color: var(--bg-color);
 

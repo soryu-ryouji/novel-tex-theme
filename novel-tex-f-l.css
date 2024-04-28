@@ -3,6 +3,7 @@
 @import "./novel-tex/light/code-light.css";
 
 :root {
+  /* Novel Tex Full Light */
   --text-color: black;
   --primary-btn-text-color: black;
   --bg-color: white;
