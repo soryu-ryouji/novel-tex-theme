@@ -11,7 +11,7 @@
 
     /* 引言设置 */
     --quote-font: "Source Han Serif SC";
-    --quote-font-size: 0.9em;
+    --quote-font-size: 0.95em;
 
     /* 源代码模式设置 */
     --sourceMode-font: var(--base-Latin-font), var(--base-Chinese-font);
@@ -52,7 +52,6 @@
     --set-margin: 1.8cm 2cm 1.8cm 2cm !important;
     /* 目录中是否显示一级标题 */
     --toc-show-title: none;
-    
     /*普通文本颜色*/
     --text-color: rgb(180, 180, 180);
     --title-text-color: rgb(240, 240, 240);
@@ -209,7 +208,7 @@ blockquote {
 /* blockquote p:first-child {
     padding-top: 1ch;
   }
-  
+
   blockquote p:last-child {
     padding-bottom: 1ch;
   } */
@@ -224,7 +223,7 @@ blockquote {
 
 
 hr {
-    border-top: solid 1px var(--bg-color);
+    border-top: solid 1px var(--text-color);
     margin-top: 1.8em;
     margin-bottom: 1.8em;
 }
