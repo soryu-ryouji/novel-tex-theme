@@ -65,20 +65,27 @@ theme/
 >
 > 文档中的界面预览图与实际安装后的界面不保证百分百相同（有空时会上传新的预览图）
 
-![Novel Tex](./.assets/novel-tex_00.png)
 
-![Novel Tex](./.assets/novel-tex-dark_00.png)
+**Full Light**
 
-![Novel Tex](./.assets/novel-tex_01.png)
+![fd](./.assets/novel-tex-f-l.png)
 
-![Novel Tex](./.assets/novel-tex-dark_01.png)
+![fd](./.assets/novel-tex-f-l-code.png)
 
-![Novel Tex](./.assets/novel-tex-code.png)
+**Normal Light**
 
-![Novel Tex](./.assets/novel-tex-dark-code.png)
+![fd](./.assets/novel-tex-n-l.png)
 
-![Novel Tex](./.assets/novel-tex-math.png)
+![fd](./.assets/novel-tex-n-l-code.png)
 
-![Novel Tex](./.assets/novel-tex-dark-math.png)
+**Full Dark**
 
-![Novel Tex](./.assets/novel-tex-mermaid.png)
+![fd](./.assets/novel-tex-f-d.png)
+
+![fd](./.assets/novel-tex-f-d-code.png)
+
+**Normal Dark**
+
+![fd](./.assets/novel-tex-n-d.png)
+
+![fd](./.assets/novel-tex-n-d-code.png)
