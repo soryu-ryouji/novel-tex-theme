@@ -14,11 +14,17 @@
 4. 增加了代码块线框，使代码块在文档中更加显眼
 5. 更改了默认字体
 
-NovelTex 使用思源黑体作为文档中文正文、思源宋体作为文章引文字体、Arial 作为文档英文字体、微软雅黑作为 UI 字体、Consolas 作为代码字体
+NovelTex 使用思源宋体作为文档中文字体、Arial 作为文档英文字体、微软雅黑作为 UI 字体、Consolas 作为代码字体
 
-思源黑体：https://github.com/adobe-fonts/source-han-sans/releases/download/2.004R/SourceHanSansSC.zip
+<!-- 思源黑体：https://github.com/adobe-fonts/source-han-sans/releases/download/2.004R/SourceHanSansSC.zip -->
 
 思源宋体：https://github.com/adobe-fonts/source-han-serif/releases/download/2.002R/09_SourceHanSerifSC.zip
+
+> 正文字体相关配置在 `novel-tex\basic\base-config.css`
+>
+> UI 字体相关配置在 `novel-tex\basic\ui.css`
+>
+> 代码字体字体相关配置在 `novel-tex\basic\basic-code.css`
 
 ## 主题版本介绍
 

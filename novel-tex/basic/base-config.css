@@ -6,7 +6,7 @@
 :root {
     /* == 字体设置 == */
     --base-Latin-font: "Arial";
-    --base-Chinese-font: "Microsoft YaHei";
+    --base-Chinese-font: "Source Han Serif SC";
     --base-font-size: 1.15em;
 
     /* 引言设置 */
