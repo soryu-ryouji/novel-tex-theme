@@ -17,7 +17,7 @@
     page-break-inside: avoid;
     border-spacing: 6px;
     /* 自动布局表格宽度，如果有时内容太紧建议直接加空格吧，我自己看不惯和页面等宽的大表格 */
-    width: auto;
+    /* width: auto; */
     /* 使表格默认居中；虽然这个代码不好，但好像没别的实现办法 */
     margin: 0 auto;
 }
