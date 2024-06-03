@@ -1,28 +1,21 @@
+@import "./basic-mermaid.css";
+@import "./math.css";
 @import "./md-toc.css";
 @import "./table.css";
 @import "./ui.css";
-@import "./basic-mermaid.css";
 
 :root {
-    /* == 字体设置 == */
-    --base-Latin-font: "Arial";
+    /* == 基础字体设置 == */
+    --base-Latin-font: "Times New Roman";
     --base-Chinese-font: "Source Han Serif SC";
     --base-font-size: 1.15em;
 
-    /* 引言设置 */
+    /* 引言字体设置 */
     --quote-font: "Source Han Serif SC";
     --quote-font-size: 0.95em;
 
-    /* 源代码模式设置 */
+    /* 源代码模式字体设置 */
     --sourceMode-font: var(--base-Latin-font), var(--base-Chinese-font);
-
-    /* 目录字体（默认调用 base-font） */
-    --toc-font: "";
-    /* 默认调用 base-font-size */
-    --toc-font-size: var(--base-font-size);
-
-    /* 公式字体 */
-    --math-font-size: 1em;
 
     /* 表格字体（默认调用 heading-font） */
     --table-title-font: "";

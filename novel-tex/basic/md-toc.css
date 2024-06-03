@@ -1,3 +1,8 @@
+:root {
+    --toc-font: var(--base-Latin-font), var(--base-Chinese-font);
+    --toc-font-size: 1em;
+}
+
 .md-toc {
     font-size: var(--toc-font-size);
     /* border: 1px solid #ccc;                                 /* 整个代码块的边框样式 */

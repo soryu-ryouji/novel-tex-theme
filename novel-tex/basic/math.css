@@ -1,3 +1,8 @@
+:root {
+    /* 公式字体 */
+    --math-font-size: 1em;
+}
+
 .MathJax {
     font-size: var(--math-font-size);
 }
