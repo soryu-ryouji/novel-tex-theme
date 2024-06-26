@@ -37,6 +37,12 @@
     --bg-color-shader: var(--bg-color);
 }
 
+@media (max-width: 1000px) {
+    :root {
+        --body-border-color: var(--bg-color);
+    }
+  }
+
 .typora-node #typora-sidebar {
     color: var(--sidebar-text-color);
     background-color: var(--sidebar-bg-color);
