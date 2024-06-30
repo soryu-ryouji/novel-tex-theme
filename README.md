@@ -56,14 +56,7 @@ theme/
 └─novel-tex-n-l.css
 ```
 
-| variable            | Description             | Default Value  |
-| ------------------- | ----------------------- | -------------- |
-| --bg-color          | Background color        | Black          |
-| --code-bg-color     | Code block border color | --bg-color     |
-| --border-color      | Default border color    | White          |
-| --code-border-color | Code block border color | --border-color |
-| --body-border-color | Write body border color | --border-color |
-
+考虑到大多数人的使用习惯，表格的对齐方式默认设置为左对齐，如果希望表格默认居中对齐，可以去 `novel-tex/basic/table.css` 的 `#write table` 中修改 `text-align` 变量。
 
 ## Screenshots
 
