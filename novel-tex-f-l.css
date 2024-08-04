@@ -3,9 +3,15 @@
 @import "./novel-tex/light/code-light.css";
 
 :root {
-  /* Novel Tex Full Light */
+  /*
+  目录树颜色
+  */
   --active-file-bg-color: rgb(192, 192, 192);
   --active-file-text-color: var(--text-color);
+
+  /*
+  界面UI的字体颜色
+  */
   --item-hover-bg-color: var(--active-file-bg-color);
   --item-hover-text-color: var(--active-file-text-color);
 }

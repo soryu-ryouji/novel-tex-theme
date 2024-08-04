@@ -8,5 +8,8 @@
   --bg-color: white;
   --border-color: black;
 
+  --select-text-bg-color: rgb(218, 227, 234);
+  --select-text-font-color: var(--text-color);
+
   --li-code-bg-color: rgb(238, 238, 238);
 }
