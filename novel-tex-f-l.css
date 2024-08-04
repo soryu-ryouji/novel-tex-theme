@@ -1,19 +1,11 @@
 @charset "UTF-8";
-@import "./novel-tex/basic/base-config.css";
+@import "./novel-tex/light/basic-light-config.css";
 @import "./novel-tex/light/code-light.css";
 
 :root {
   /* Novel Tex Full Light */
-  --text-color: black;
-  --primary-btn-text-color: black;
-  --bg-color: white;
-  --border-color: black;
-
   --active-file-bg-color: rgb(192, 192, 192);
   --active-file-text-color: var(--text-color);
   --item-hover-bg-color: var(--active-file-bg-color);
   --item-hover-text-color: var(--active-file-text-color);
-
-  --link-color: #7E8B92;
-  --li-code-bg-color: rgb(238, 238, 238);
 }
