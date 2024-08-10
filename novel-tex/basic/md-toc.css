@@ -5,8 +5,10 @@
 
 .md-toc {
     font-size: var(--toc-font-size);
-    /* border: 1px solid #ccc;                                 /* 整个代码块的边框样式 */
-    /* border-radius: 0px;                                     /*  可选：添加圆角 */
+    /* 整个代码块的边框样式*/
+    border-bottom: 1px solid var(--text-color);
+    /*  可选：添加圆角 */
+    border-radius: 0px;
 }
 
 .md-toc-content {
