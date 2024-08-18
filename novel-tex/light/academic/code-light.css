@@ -1,4 +1,5 @@
-@import "../basic/basic-code-academic.css";
+@import "../../basic/academic/basic-code.css";
+
 :root {
     --code-linenumber-color: grey;
     --code-keyword: #0055ff;

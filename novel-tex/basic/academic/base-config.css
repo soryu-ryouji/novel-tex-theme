@@ -1,8 +1,8 @@
-@import "./basic-mermaid.css";
-@import "./math.css";
+@import "./../basic-mermaid.css";
+@import "./../math.css";
 /* @import "./md-toc.css"; */
-@import "./table.css";
-@import "./ui.css";
+@import "./../table.css";
+@import "./../ui.css";
 
 :root {
     /* == 使用页面设置 == */
@@ -52,7 +52,7 @@
     --toc-show-title: none;
     /*普通文本颜色*/
     --text-color: rgb(180, 180, 180);
-    --title-text-color: rgb(240, 240, 240); 
+    --title-text-color: rgb(240, 240, 240);
     --strong-text-color: var(--text-color);
 
     /*目录文本颜色*/

@@ -1,4 +1,4 @@
-@import "../basic/base-config-academic.css";
+@import "../../basic/academic/base-config.css";
 
 :root {
   --text-color: black;
