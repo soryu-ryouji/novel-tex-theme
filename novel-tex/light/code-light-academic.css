@@ -1,0 +1,28 @@
+@import "../basic/basic-code-academic.css";
+:root {
+    --code-linenumber-color: grey;
+    --code-keyword: #0055ff;
+    --code-operator: #000000;
+    --code-variable: #0000CC;   /*变量*/
+    --code-variable-2: #9900CC;
+    --code-variable-3: #9900CC; /*int*/
+    --code-builtin: #DECB6B;
+    --code-atom: #F77669;
+    --code-number: #F77669;
+    --code-def: #0055ff;
+    --code-string: #336633;
+    --code-string-2: #80CBC4;
+    --code-comment: #b35000;
+    --code-tag: #CC33CC;
+    --code-meta: #CC00CC;
+    --code-attribute: #FFCB6B;
+    --code-property: #80CBAE;
+    --code-qualifier: #DECB6B;
+    --code-error: rgb(255, 255, 255);
+    --code-error-bg: red;
+
+    --title-text-color: black;
+    --text-color: black;
+
+    --mermaid-theme: neutral;
+}
