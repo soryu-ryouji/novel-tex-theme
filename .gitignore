@@ -6,6 +6,7 @@
 !.assets/**
 !novel-tex/
 !novel-tex/**
+!academic-tex-l.css
 !novel-tex-f-d.css
 !novel-tex-n-d.css
 !novel-tex-f-l.css
