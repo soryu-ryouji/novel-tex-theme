@@ -85,7 +85,8 @@ footer.ty-footer {
 /* typora 源代码模式 */
 #typora-source {
     font-family: var(--sourceMode-font), var(--code-font), var(--ui-font), monospace;
-    line-height: 2em;
+    font-size: var(--base-font-size);
+    line-height: 1em;
 }
 
 .sidebar-content {
