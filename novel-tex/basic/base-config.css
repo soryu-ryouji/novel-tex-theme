@@ -3,6 +3,7 @@
 @import "./md-toc.css";
 @import "./table.css";
 @import "./ui.css";
+@import "./list.css";
 
 :root {
     /* == 基础字体设置 == */
@@ -198,21 +199,21 @@ blockquote {
     margin-left: 0;
 }
 
-/* blockquote p:first-child {
+blockquote p:first-child {
     padding-top: 1ch;
-  }
+}
 
-  blockquote p:last-child {
+blockquote p:last-child {
     padding-bottom: 1ch;
-  } */
+}
 
-/* blockquote blockquote {
+blockquote blockquote {
     border-left: 4px solid #b3b3b3;
     padding-left: calc(2ch - 4px);
     padding-right: 0;
     margin-left: -4px;
     border-radius: 0;
-  } */
+}
 
 
 hr {
