@@ -1,0 +1,13 @@
+.footnotes {
+    /* 参考文献（脚注）块 */
+    font-size: 0.95em;
+}
+
+.footnotes-area .footnote-line {
+    color: var(--text-color);
+}
+
+.footnotes-area hr {
+    border: 0;
+    color: var(--text-color);
+}

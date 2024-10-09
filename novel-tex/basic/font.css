@@ -1,11 +1,3 @@
-@import "./basic-mermaid.css";
-@import "./math.css";
-@import "./md-toc.css";
-@import "./table.css";
-@import "./ui.css";
-@import "./list.css";
-@import "./outline.css";
-
 :root {
     /* == 基础字体设置 == */
     --base-Latin-font: "Times New Roman";
@@ -26,17 +18,12 @@
     /* 标题字体（总设置）*/
     --heading-Latin-font: var(--base-Latin-font);
     --heading-Chinese-font: var(--base-Chinese-font);
-    --h1-Chinese-font: var(--base-Chinese-font);
+    --heading-font : var(--heading-Latin-font), var(--heading-Chinese-font);
     --h1-font-size: 1.9em;
-    --h2-Chinese-font: var(--base-Chinese-font);
     --h2-font-size: 1.5em;
-    --h3-Chinese-font: var(--base-Chinese-font);
     --h3-font-size: 1.25em;
-    --h4-Chinese-font: var(--base-Chinese-font);
     --h4-font-size: 1.15em;
-    --h5-Chinese-font: var(--base-Chinese-font);
     --h5-font-size: 1.10em;
-    --h6-Chinese-font: var(--base-Chinese-font);
     --h6-font-size: 1.10em;
 
     /* 粗体样式设置（normal: 400，bold: 700，heavy: 900） */
@@ -59,45 +46,11 @@
 
     /* 超链接颜色 */
     --link-color: #7E8B92;
-
-    /*改变元字符的颜色，例如 markdown 中的“*”*/
-    --md-char-color: #C7C5C5;
-    /*改变元内容的颜色，例如 markdown 中的图像文本和链接地址*/
-    --meta-content-color: #5b808d;
-}
-
-body {
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-img {
-    page-break-inside: avoid;
-    /* 避免图片在导出时被断开 */
 }
 
 strong {
     font-weight: var(--strong-weight);
     color: var(--strong-text-color);
-}
-
-@media screen {
-    #write {
-        padding: var(--set-margin);
-        border: 1px solid var(--body-border-color);
-    }
-}
-
-pre.md-meta-block {
-    /* 元数据（如 YAML front matter）的背景框 */
-    background: var(--bg-color);
-    padding: 1.4em;
-    font-family: var(--code-font), var(--ui-font), monospace;
-    font-size: 0.8em;
-}
-
-#write {
-    counter-reset: h2 0 h3 0 h4 0 h5 0 h6 0;
 }
 
 #write {
@@ -121,7 +74,6 @@ pre.md-meta-block {
     color: var(--link-color);
 }
 
-
 #write h1,
 #write h2,
 #write h3,
@@ -134,88 +86,41 @@ pre.md-meta-block {
 }
 
 #write h1 {
-    font-family: var(--heading-Latin-font), var(--h1-Chinese-font), serif;
+    font-family: var(--heading-font), serif;
     text-align: center;
     column-span: all;
     font-size: var(--h1-font-size);
 }
 
 #write h2 {
-    font-family: var(--heading-Latin-font), var(--h2-Chinese-font), serif;
+    font-family: var(--heading-font), serif;
     font-size: var(--h2-font-size);
 }
 
 #write h3 {
-    font-family: var(--heading-Latin-font), var(--h3-Chinese-font), serif;
+    font-family: var(--heading-font), serif;
     font-size: var(--h3-font-size);
     line-height: var(--h3-font-size);
 }
 
 #write h4 {
-    font-family: var(--heading-Latin-font), var(--h4-Chinese-font), serif;
+    font-family: var(--heading-font), serif;
     font-size: var(--h4-font-size);
     line-height: var(--h4-font-size);
 }
 
 #write h5 {
-    font-family: var(--heading-Latin-font), var(--h5-Chinese-font), serif;
+    font-family: var(--heading-font), serif;
     font-size: var(--h5-font-size);
     line-height: var(--h5-font-size);
 }
 
 #write h6 {
-    font-family: var(--heading-Latin-font), var(--h6-Chinese-font), serif;
+    font-family: var(--heading-font), serif;
     font-size: var(--h6-font-size);
     line-height: var(--h5-font-size);
     /* 没有写错，为了避免行距太小才这么写 */
 }
-
-
-.footnotes {
-    /* 参考文献（脚注）块 */
-    font-size: 0.95em;
-}
-
-.footnotes-area .footnote-line {
-    color: var(--text-color);
-}
-
-.footnotes-area hr {
-    border: 0;
-    color: var(--text-color);
-}
-
-/* == 引言 == */
-
-/* 一个>的引言仅为两字符缩进，使用>>的引言为传统引言样式，具有左竖线、左缩进 */
-blockquote {
-    font-style: normal;
-    font-family: var(--quote-font), var(--base-Latin-font), var(--base-Chinese-font), -apple-system, serif;
-    font-size: var(--quote-font-size);
-    /* border-left: 1px solid black; */
-    padding-left: 2em;
-    /* 文字离左边框的距离 */
-    padding-right: 2em;
-    /* 左边框离页面边的距离 */
-    margin-left: 0;
-}
-
-blockquote p:first-child {
-    padding-top: 1ch;
-}
-
-blockquote p:last-child {
-    padding-bottom: 1ch;
-}
-
-blockquote blockquote {
-    border-left: 4px solid #b3b3b3;
-    padding-left: calc(2ch - 4px);
-    padding-right: 0;
-    margin-left: -4px;
-    border-radius: 0;
-}
-
 
 hr {
     border-top: solid 1px var(--text-color);

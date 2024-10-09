@@ -1,4 +1,4 @@
-@import "../basic/basic-code.css";
+@import "../basic/code.css";
 
 :root {
     --code-linenumber-color: grey;

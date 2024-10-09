@@ -1,4 +1,4 @@
-/* 侧边大纲标题 */
+/* 侧边栏大纲序号 */
 .sidebar-content .outline-h1 {
   counter-reset: outline-h2;
 }
@@ -33,50 +33,11 @@
     "." counter(outline-h5) "  ";
 }
 
-/* 正文标题 */
+/* 文章内序号 */
 #write {
   counter-reset: h2 0 h3 0 h4 0 h5 0 h6 0;
 }
-#write h1,
-#write h2,
-#write h3,
-#write h4,
-#write h5,
-#write h6 {
-  font-weight: bold;
-  page-break-after: avoid !important;
-}
-#write h1 {
-  font-family: var(--heading-Latin-font), var(--title-Chinese-font), serif;
-  text-align: center;
-  column-span: all;
-  font-size: var(--title-font-size);
-}
-#write h2 {
-  font-family: var(--heading-Latin-font), var(--h2-Chinese-font), serif;
-  font-size: var(--h2-font-size);
-}
-#write h3 {
-  font-family: var(--heading-Latin-font), var(--h3-Chinese-font), serif;
-  font-size: var(--h3-font-size);
-  line-height: var(--h3-font-size);
-}
-#write h4 {
-  font-family: var(--heading-Latin-font), var(--h4-Chinese-font), serif;
-  font-size: var(--h4-font-size);
-  line-height: var(--h4-font-size);
-}
-#write h5 {
-  font-family: var(--heading-Latin-font), var(--h5-Chinese-font), serif;
-  font-size: var(--h5-font-size);
-  line-height: var(--h5-font-size);
-}
-#write h6 {
-  font-family: var(--heading-Latin-font), var(--h6-Chinese-font), serif;
-  font-size: var(--h6-font-size);
-  /* 没有写错，为了避免行距太小才这么写 */
-  line-height: var(--h5-font-size);
-}
+
 #write h1 {
   counter-reset: h2;
 }

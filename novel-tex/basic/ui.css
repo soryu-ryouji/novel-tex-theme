@@ -1,100 +1,101 @@
 :root {
-    --ui-font: "Microsoft YaHei";
+  --ui-font: "Microsoft YaHei";
 
-    /*选中文本样式*/
-    --select-text-bg-color: rgb(70, 70, 70);
-    --select-text-font-color: rgb(255,255,255);
+  /*选中文本样式*/
+  --select-text-bg-color: rgb(70, 70, 70);
+  --select-text-font-color: rgb(255, 255, 255);
 
-    /*编辑区颜色*/
-    --text-color: black;
-    --bg-color: rgb(43, 43, 43);
+  /*编辑区颜色*/
+  --text-color: black;
+  --bg-color: rgb(43, 43, 43);
 
-    /*边框颜色*/
-    --border-color: #727272;
-    --body-border-color: var(--border-color);
+  /*边框颜色*/
+  --border-color: #727272;
+  --body-border-color: var(--border-color);
 
-    /*文件树或文件列表中当前项的背景色*/
-    --active-file-bg-color: var(--select-text-bg-color);
-    --active-file-text-color: var(--select-text-font-color);
-    --active-file-border-color: var(--active-file-bg-color);
+  /*文件树或文件列表中当前项的背景色*/
+  --active-file-bg-color: var(--select-text-bg-color);
+  --active-file-text-color: var(--select-text-font-color);
+  --active-file-border-color: var(--active-file-bg-color);
 
-    --mega-text-color: var(--text-color);
-    --mega-bg-color: var(--bg-color);
-    --item-hover-bg-color: var(--select-text-bg-color);
-    --item-hover-text-color: var(--select-text-font-color);
+  --mega-text-color: var(--text-color);
+  --mega-bg-color: var(--bg-color);
+  --item-hover-bg-color: var(--select-text-bg-color);
+  --item-hover-text-color: var(--select-text-font-color);
 
-    /*主按钮的颜色*/
-    --primary-color: #428bca;
-    --primary-btn-border-color: #285e8e;
-    --primary-btn-text-color: #414141;
+  /*主按钮的颜色*/
+  --primary-color: #428bca;
+  --primary-btn-border-color: #285e8e;
+  --primary-btn-text-color: #414141;
 
-    /*Typora侧边栏颜色*/
-    --sidebar-text-color: var(--text-color);
-    --sidebar-bg-color: var(--bg-color);
-    --window-border: 1px solid var(--bg-color);
+  /*Typora侧边栏颜色*/
+  --sidebar-text-color: var(--text-color);
+  --sidebar-bg-color: var(--bg-color);
+  --window-border: 1px solid var(--bg-color);
 
-    /*编辑区阴影*/
-    --bg-color-shader: var(--bg-color);
+  /*编辑区阴影*/
+  --bg-color-shader: var(--bg-color);
 }
 
 @media (max-width: 1000px) {
-    :root {
-        --body-border-color: var(--bg-color);
-    }
+  :root {
+    --body-border-color: var(--bg-color);
   }
+}
 
 .typora-node #typora-sidebar {
-    color: var(--sidebar-text-color);
-    background-color: var(--sidebar-bg-color);
+  color: var(--sidebar-text-color);
+  background-color: var(--sidebar-bg-color);
 }
 
 /* 插入图片后弹出的框 */
 .context-menu,
 #spell-check-panel,
 #footer-word-count-info {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 /* 鼠标悬停到按钮上后的悬停文本框 */
 .ty-tooltip {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 /* 以下三段与 Unibody UI 模式的适配有关 */
 .megamenu-content,
 .megamenu-opened header {
-    background: var(--bg-color);
+  background: var(--bg-color);
 }
 
 /* mega menu sidebar*/
 .megamenu-menu {
-    color: var(--mega-text-color);
-    background-color: var(--mega-bg-color);
+  color: var(--mega-text-color);
+  background-color: var(--mega-bg-color);
 }
 
 #recent-file-panel tbody tr:nth-child(2n-1) {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 /* typora UI 编辑页面，在宽度较小时的底栏 */
 footer.ty-footer {
-    border-top: 1px solid var(--bg-color);
+  border-top: 1px solid var(--bg-color);
 }
 
 /* typora 源代码模式 */
 #typora-source {
-    font-family: var(--sourceMode-font), var(--code-font), var(--ui-font), monospace;
-    font-size: var(--base-font-size);
-    line-height: 1em;
+  font-family: var(--sourceMode-font), var(--code-font), var(--ui-font),
+    monospace;
+  font-size: var(--base-font-size);
+  line-height: 1em;
 }
 
 .sidebar-content {
-    font-family: var(--ui-font);
-    color: var(--text-color);
-    list-style: none;
+  font-family: var(--ui-font);
+  color: var(--text-color);
+  list-style: none;
 }
 
 #typora-quick-open {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }

@@ -1,78 +1,78 @@
 #write ul p {
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 
 #write li p {
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 
 /* UI 无序列表 */
 ul {
-    list-style: disc;
+  list-style: disc;
 }
 
 ul ul {
-    /*list-style: circle;*/
-    /* 请勿删除“–”后的空格, 他们对缩进有一定影响, 下同 */
-    list-style: "–   ";
+  /*list-style: circle;*/
+  /* 请勿删除“–”后的空格, 他们对缩进有一定影响, 下同 */
+  list-style: "–   ";
 }
 
 ul ul ul {
-    list-style: "◦  ";
+  list-style: "◦  ";
 }
 
 /* 有序列表 */
 ol {
-    list-style: decimal;
+  list-style: decimal;
 }
 
 ol ol {
-    counter-reset: liist;
-    list-style: none;
+  counter-reset: liist;
+  list-style: none;
 }
 
 ol ol li {
-    counter-increment: liist;
-    position: relative;
+  counter-increment: liist;
+  position: relative;
 }
 
 ol ol li::before {
-    content: "(" counter(liist, lower-alpha) ")";
-    position: absolute;
-    left: -1.8em;
+  content: "(" counter(liist, lower-alpha) ")";
+  position: absolute;
+  left: -1.8em;
 }
 
 ol ol ol {
-    counter-reset: liiist;
-    list-style: none;
-    margin: 0;
+  counter-reset: liiist;
+  list-style: none;
+  margin: 0;
 }
 
 ol ol ol li {
-    counter-increment: liiist;
-    position: relative;
+  counter-increment: liiist;
+  position: relative;
 }
 
 ol ol ol li::before {
-    content: counter(liiist, lower-roman) ".";
-    align-self: flex-end;
-    position: absolute;
-    left: -4.5em;
-    /* -moz-box-sizing: border-box;
+  content: counter(liiist, lower-roman) ".";
+  align-self: flex-end;
+  position: absolute;
+  left: -4.5em;
+  /* -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;*/
-    /* 为了让项目编号是重新用句点对齐而不是左对齐 */
-    width: 4em;
-    text-align: right;
+  /* 为了让项目编号是重新用句点对齐而不是左对齐 */
+  width: 4em;
+  text-align: right;
 }
 
 li {
-    position: relative;
+  position: relative;
 }
 
 ol,
 ul {
-    padding-inline-start: 2em;
+  padding-inline-start: 2em;
 }

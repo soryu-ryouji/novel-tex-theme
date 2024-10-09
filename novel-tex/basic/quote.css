@@ -1,0 +1,29 @@
+/* 一个>的引言仅为两字符缩进，使用>>的引言为传统引言样式，具有左竖线、左缩进 */
+blockquote {
+  font-style: normal;
+  font-family: var(--quote-font), var(--base-Latin-font),
+    var(--base-Chinese-font), -apple-system, serif;
+  font-size: var(--quote-font-size);
+  /* border-left: 1px solid black; */
+  padding-left: 2em;
+  /* 文字离左边框的距离 */
+  padding-right: 2em;
+  /* 左边框离页面边的距离 */
+  margin-left: 0;
+}
+
+blockquote p:first-child {
+  padding-top: 1ch;
+}
+
+blockquote p:last-child {
+  padding-bottom: 1ch;
+}
+
+blockquote blockquote {
+  border-left: 4px solid #b3b3b3;
+  padding-left: calc(2ch - 4px);
+  padding-right: 0;
+  margin-left: -4px;
+  border-radius: 0;
+}

@@ -1,4 +1,4 @@
-@import "../basic/base-config.css";
+@import "../basic/include.css";
 
 :root {
   --text-color: black;
