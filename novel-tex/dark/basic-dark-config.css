@@ -1,4 +1,4 @@
-@import "../basic/include.css";
+@import "./code-dark.css";
 
 :root {
   --text-color: rgb(180, 180, 180);

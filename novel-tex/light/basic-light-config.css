@@ -1,4 +1,4 @@
-@import "../basic/include.css";
+@import "./code-light.css";
 
 :root {
   --text-color: black;

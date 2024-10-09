@@ -1,31 +1,31 @@
 :root {
-    /*改变元字符的颜色，例如 markdown 中的“*”*/
-    --md-char-color: #C7C5C5;
-    /*改变元内容的颜色，例如 markdown 中的图像文本和链接地址*/
-    --meta-content-color: #5b808d;
+  /*改变元字符的颜色，例如 markdown 中的“*”*/
+  --md-char-color: #c7c5c5;
+  /*改变元内容的颜色，例如 markdown 中的图像文本和链接地址*/
+  --meta-content-color: #5b808d;
 }
 
 body {
-    padding: 0 !important;
-    margin: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 img {
-    page-break-inside: avoid;
-    /* 避免图片在导出时被断开 */
+  page-break-inside: avoid;
+  /* 避免图片在导出时被断开 */
 }
 
 @media screen {
-    #write {
-        padding: var(--set-margin);
-        border: 1px solid var(--body-border-color);
-    }
+  #write {
+    padding: var(--set-margin);
+    border: 1px solid var(--body-border-color);
+  }
 }
 
 pre.md-meta-block {
-    /* 元数据（如 YAML front matter）的背景框 */
-    background: var(--bg-color);
-    padding: 1.4em;
-    font-family: var(--code-font), var(--ui-font), monospace;
-    font-size: 0.8em;
+  /* 元数据（如 YAML front matter）的背景框 */
+  background: var(--bg-color);
+  padding: 1.4em;
+  font-family: var(--code-font), var(--ui-font), monospace;
+  font-size: 0.8em;
 }

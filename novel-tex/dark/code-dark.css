@@ -1,5 +1,3 @@
-@import "../basic/code.css";
-
 :root {
     --code-linenumber-color: grey;
     --code-keyword: #f480ff;

@@ -1,6 +1,6 @@
 @charset "UTF-8";
+@import "./novel-tex/basic/include.css";
 @import "./novel-tex/light/basic-light-config.css";
-@import "./novel-tex/light/code-light.css";
 
 :root {
   /*
