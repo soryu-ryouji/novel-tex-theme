@@ -8,11 +8,13 @@
 
 主要修改：
 
-1. 移除了 typora-latex-theme 的标题自动编号特性
+1. 提取出了 typora-latex-theme 的标题自动编号特性
 2. 修改了 typora-latex-theme 的页面大小与字体大小，优化了笔记本设备的使用体验
 3. 将 mermaid 的默认主题修改为灰色，使其与主题风格更加统一
 4. 增加了代码块线框，使代码块在文档中更加显眼
 5. 更改了默认字体
+
+> 如果不需要标题自动编号特性，可在 `novel-tex/basic/basic-config.css` 中注释掉 `@import "./outline.css";`
 
 NovelTex 使用思源宋体作为文档中文字体、Times New Roman 作为文档英文字体、微软雅黑作为 UI 字体、Consolas 作为代码字体
 

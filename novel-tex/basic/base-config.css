@@ -4,6 +4,7 @@
 @import "./table.css";
 @import "./ui.css";
 @import "./list.css";
+@import "./outline.css";
 
 :root {
     /* == 基础字体设置 == */
