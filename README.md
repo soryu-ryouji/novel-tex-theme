@@ -22,12 +22,6 @@ NovelTex 使用思源宋体作为文档中文字体、Times New Roman 作为文�
 
 思源宋体：https://github.com/adobe-fonts/source-han-serif/releases/download/2.002R/09_SourceHanSerifSC.zip
 
-> 正文字体相关配置在 `novel-tex\basic\base-config.css`
->
-> UI 字体相关配置在 `novel-tex\basic\ui.css`
->
-> 代码字体字体相关配置在 `novel-tex\basic\basic-code.css`
-
 ## 主题版本介绍
 
 各个主题文件之间没有相互依赖的关系，可以只复制自己需要的主题文件使用，但 `novel-tex` 文件夹需要完整复制，里面包含了主题文件所需要的基础配置。
@@ -58,7 +52,21 @@ theme/
 └─novel-tex-n-l.css
 ```
 
-考虑到大多数人的使用习惯，表格的对齐方式默认设置为左对齐，如果希望表格默认居中对齐，可以去 `novel-tex/basic/table.css` 的 `#write table` 中修改 `text-align` 变量。
+**`novel-tex/basic/` 文件介绍**
+
+- `basic.css`: 放置一些无法被归类的基础配置
+- `code.css`: 代码的基础配置，其他的配置在 `novel-tex/dark/` 和 `novel-tex/light/` 中
+- `font.css`: 文档字体的配置
+- `footnote.css`: 文档脚注的配置
+- `include.css`: 所有基础配置的引用
+- `list.css`: 文档有序列表和无须列表的配置
+- `math.css`: 数学公式的配置
+- `mermaid.css`: mermaid 图表配置
+- `outline.css`: 文档标题自动编号的配置
+- `quote.css`: 文档引言的配置
+- `table.css`: 文档表格的配置
+- `toc.css`: 文档 `Table of Content` 的配置
+- `ui.css`: Typora 的 UI 配置
 
 ## Screenshots
 
