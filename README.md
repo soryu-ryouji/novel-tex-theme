@@ -22,7 +22,7 @@ NovelTex 使用思源宋体作为文档中文字体、Times New Roman 作为文�
 
 思源宋体：https://github.com/adobe-fonts/source-han-serif/releases/download/2.002R/09_SourceHanSerifSC.zip
 
-如果不习惯主题的默认字体，或者是想希望其他更适合的字体，可以在 `novel-tex/basic/font.css` 文件中更改字体。
+如果不习惯主题的默认字体，或者有特殊的字体需求，可以在 `novel-tex/basic/font.css` 文件中更改主题的字体。
 
 ## 主题版本介绍
 
