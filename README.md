@@ -14,7 +14,7 @@
 4. 增加了代码块线框，使代码块在文档中更加显眼
 5. 更改了默认字体
 
-> 如果不需要标题自动编号特性，可在 `novel-tex/basic/basic-config.css` 中注释掉 `@import "./outline.css";`
+> 如果不需要标题自动编号特性，可在 `novel-tex/basic/include.css` 中注释掉 `@import "./outline.css";`
 
 NovelTex 使用思源宋体作为文档中文字体、Times New Roman 作为文档英文字体、微软雅黑作为 UI 字体、Consolas 作为代码字体。
 
