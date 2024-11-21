@@ -16,11 +16,13 @@
 
 > 如果不需要标题自动编号特性，可在 `novel-tex/basic/basic-config.css` 中注释掉 `@import "./outline.css";`
 
-NovelTex 使用思源宋体作为文档中文字体、Times New Roman 作为文档英文字体、微软雅黑作为 UI 字体、Consolas 作为代码字体
+NovelTex 使用思源宋体作为文档中文字体、Times New Roman 作为文档英文字体、微软雅黑作为 UI 字体、Consolas 作为代码字体。
 
 <!-- 思源黑体：https://github.com/adobe-fonts/source-han-sans/releases/download/2.004R/SourceHanSansSC.zip -->
 
 思源宋体：https://github.com/adobe-fonts/source-han-serif/releases/download/2.002R/09_SourceHanSerifSC.zip
+
+如果不习惯主题的默认字体，或者是想希望其他更适合的字体，可以在 `novel-tex/basic/font.css` 文件中更改字体。
 
 ## 主题版本介绍
 
@@ -59,7 +61,7 @@ theme/
 - `font.css`: 文档字体的配置
 - `footnote.css`: 文档脚注的配置
 - `include.css`: 所有基础配置的引用
-- `list.css`: 文档有序列表和无须列表的配置
+- `list.css`: 文档有序列表和无序列表的配置
 - `math.css`: 数学公式的配置
 - `mermaid.css`: mermaid 图表配置
 - `outline.css`: 文档标题自动编号的配置
