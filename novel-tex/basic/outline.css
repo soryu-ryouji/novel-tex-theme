@@ -33,6 +33,22 @@
     "." counter(outline-h5) "  ";
 } */
 
+.sidebar-content .outline-h4 {
+  counter-reset: outline-h5;
+}
+.sidebar-content .outline-h4 .outline-label:before {
+  counter-increment: outline-h4;
+  content: counter(outline-h2) "." counter(outline-h3) "." counter(outline-h4)
+    "  ";
+}
+.sidebar-content .outline-h5 {
+  counter-reset: outline-h6;
+}
+.sidebar-content .outline-h5 .outline-label:before {
+  counter-increment: outline-h5;
+  content: "";
+}
+
 /* 文章内序号 */
 #write {
   counter-reset: h2 0 h3 0 h4 0 h5 0 h6 0;
