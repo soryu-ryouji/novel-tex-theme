@@ -15,6 +15,8 @@
 5. 更改了默认字体
 
 > 如果不需要标题自动编号特性，可在 `novel-tex/basic/include.css` 中注释掉 `@import "./outline.css";`
+>
+> 如果希望控制自动编号的标题等级，可以在 `novel-tex/basic/outline.css` 中选择性的注释掉部分代码。
 
 NovelTex 使用思源宋体作为文档中文字体、Times New Roman 作为文档英文字体、微软雅黑作为 UI 字体、Consolas 作为代码字体。
 
@@ -36,7 +38,6 @@ NovelTex 使用思源宋体作为文档中文字体、Times New Roman 作为文�
 | ND   | Normal Dark  |
 | FL   | Full Light   |
 | NL   | Normal Lignt |
-
 
 ## 开发指南
 
@@ -75,7 +76,6 @@ theme/
 > 通过身边使用该主题的朋友反馈，主题样式会不定期更新
 >
 > 文档中的界面预览图与实际安装后的界面不保证百分百相同（有空时会上传新的预览图）
-
 
 **Full Light**
 
