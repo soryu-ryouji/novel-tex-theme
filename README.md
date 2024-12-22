@@ -71,6 +71,10 @@ theme/
 - `toc.css`: 文档 `Table of Content` 的配置
 - `ui.css`: Typora 的 UI 配置
 
+### 参考文档
+
+[Typora China: 如何实现标题自动编号特性](https://typorachina.com/guide/how-tos/auto-numbering-for-headings.html)
+
 ## Screenshots
 
 > 通过身边使用该主题的朋友反馈，主题样式会不定期更新
