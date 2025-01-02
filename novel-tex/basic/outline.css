@@ -1,52 +1,46 @@
 /* 侧边栏大纲序号 */
+.sidebar-content {
+  counter-reset: outline-h1 outline-h2 outline-h3 outline-h4 outline-h5 outline-h6;
+}
+
 .sidebar-content .outline-h1 {
-  counter-reset: outline-h2;
+  counter-reset: outline-h2 outline-h3 outline-h4 outline-h5 outline-h6;
 }
+
 .sidebar-content .outline-h2 {
-  counter-reset: outline-h3;
+  counter-reset: outline-h3 outline-h4 outline-h5 outline-h6;
 }
+
 .sidebar-content .outline-h2 .outline-label:before {
   counter-increment: outline-h2;
   content: counter(outline-h2) " ";
 }
+
 .sidebar-content .outline-h3 {
-  counter-reset: outline-h4;
+  counter-reset: outline-h4 outline-h5 outline-h6;
 }
+
 .sidebar-content .outline-h3 .outline-label:before {
   counter-increment: outline-h3;
   content: counter(outline-h2) "." counter(outline-h3) "  ";
 }
-/* .sidebar-content .outline-h4 {
-  counter-reset: outline-h5;
-}
-.sidebar-content .outline-h4 .outline-label:before {
-  counter-increment: outline-h4;
-  content: counter(outline-h2) "." counter(outline-h3) "." counter(outline-h4)
-    "  ";
-}
-.sidebar-content .outline-h5 {
-  counter-reset: outline-h6;
-}
-.sidebar-content .outline-h5 .outline-label:before {
-  counter-increment: outline-h5;
-  content: counter(outline-h2) "." counter(outline-h3) "." counter(outline-h4)
-    "." counter(outline-h5) "  ";
-} */
 
 .sidebar-content .outline-h4 {
-  counter-reset: outline-h5;
+  counter-reset: outline-h5 outline-h6;
 }
+
 .sidebar-content .outline-h4 .outline-label:before {
   counter-increment: outline-h4;
-  content: counter(outline-h2) "." counter(outline-h3) "." counter(outline-h4)
-    "  ";
+  content: counter(outline-h2) "." counter(outline-h3) "." counter(outline-h4) "  ";
 }
+
 .sidebar-content .outline-h5 {
   counter-reset: outline-h6;
 }
+
 .sidebar-content .outline-h5 .outline-label:before {
   counter-increment: outline-h5;
-  content: "";
+  content: counter(outline-h2) "." counter(outline-h3) "." counter(outline-h4) "." counter(outline-h5) "  ";
 }
 
 /* 文章内序号 */
