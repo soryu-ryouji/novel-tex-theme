@@ -5,9 +5,9 @@ blockquote {
     var(--base-Chinese-font), -apple-system, serif;
   font-size: var(--quote-font-size);
   /* border-left: 1px solid black; */
-  padding-left: 2em;
+  padding-left: 4em;
   /* 文字离左边框的距离 */
-  padding-right: 2em;
+  padding-right: 4em;
   /* 左边框离页面边的距离 */
   margin-left: 0;
 }

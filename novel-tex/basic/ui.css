@@ -10,8 +10,8 @@
   --bg-color: rgb(43, 43, 43);
 
   /*边框颜色*/
-  --border-color: #727272;
-  --body-border-color: var(--border-color);
+  --border-color-rgb: 0, 0, 0;
+  --body-border-color: rgba(var(--border-color-rgb), 1);
 
   /*文件树或文件列表中当前项的背景色*/
   --active-file-bg-color: var(--select-text-bg-color);

@@ -6,7 +6,7 @@
     --li-code-padding: 0.2em;
     --code-inline-font-size: 0.95em;
     --code-bg-color: var(--bg-color);
-    --code-border-color: var(--border-color);
+    --code-border-color: rgba(var(--border-color-rgb), 0.5);
 }
 
 .md-fences {

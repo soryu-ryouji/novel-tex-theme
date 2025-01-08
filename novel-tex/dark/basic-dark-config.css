@@ -5,5 +5,7 @@
   --strong-text-color: rgb(255, 255, 255);
   --title-text-color: rgb(200, 200, 200);
 
+  --border-color-rgb: 255, 255, 255;
+
   --link-color: grey;
 }

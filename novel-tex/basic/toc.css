@@ -1,12 +1,13 @@
 :root {
     --toc-font: var(--base-Latin-font), var(--base-Chinese-font);
     --toc-font-size: 1em;
+    --toc-border-color: rgba(var(--border-color-rgb), 0.5);
 }
 
 .md-toc {
     font-size: var(--toc-font-size);
     /* 整个代码块的边框样式*/
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--toc-border-color);
     /*  可选：添加圆角 */
     border-radius: 0px;
 }

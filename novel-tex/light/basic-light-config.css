@@ -6,7 +6,8 @@
 
   --primary-btn-text-color: black;
   --bg-color: white;
-  --border-color: black;
+
+  --border-color-rgb: 0, 0, 0;
 
   --select-text-bg-color: rgb(218, 227, 234);
   --select-text-font-color: var(--text-color);
