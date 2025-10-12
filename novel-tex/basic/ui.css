@@ -1,6 +1,4 @@
 :root {
-  --ui-font: "Microsoft YaHei";
-
   /*选中文本样式*/
   --select-text-bg-color: rgb(70, 70, 70);
   --select-text-font-color: rgb(255, 255, 255);

@@ -1,11 +1,14 @@
 :root {
-  /* == 基础字体设置 == */
+  /* 基础字体设置 */
   --base-Latin-font: "Times New Roman";
-  --base-Chinese-font: "Source Han Serif SC";
+  --base-Chinese-font: "Source Han Serif SC", "Ping Fang SC";
   --base-font-size: 1.15em;
 
+  /* UI 字体设置 */
+  --ui-font: var(--base-Latin-font), var(--base-Chinese-font);
+
   /* 引言字体设置 */
-  --quote-font: "Source Han Serif SC";
+  --quote-font: var(--base-Latin-font), var(--base-Chinese-font);
   --quote-font-size: 0.95em;
 
   /* 源代码模式字体设置 */
