@@ -1,7 +1,7 @@
 :root {
   /* 基础字体设置 */
   --base-Latin-font: "Times New Roman";
-  --base-Chinese-font: "Source Han Serif SC", "Ping Fang SC";
+  --base-Chinese-font: "Source Han Serif SC", "Ping Fang SC", "Microsoft YaHei";
   --base-font-size: 1.15em;
 
   /* UI 字体设置 */
