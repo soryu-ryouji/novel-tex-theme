@@ -3,6 +3,7 @@
   --md-char-color: #c7c5c5;
   /*改变元内容的颜色，例如 markdown 中的图像文本和链接地址*/
   --meta-content-color: #5b808d;
+  text-autospace: normal;
 }
 
 body {
