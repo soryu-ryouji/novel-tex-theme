@@ -1,24 +1,28 @@
 :root {
-    --code-linenumber-color: grey;
-    --code-keyword: #0055ff;
-    --code-operator: #000000;
-    --code-variable: #267f99;
-    --code-variable-2: #617f99;
-    --code-variable-3: #617f99;
-    --code-builtin: #DECB6B;
-    --code-atom: #F77669;
-    --code-number: #F77669;
-    --code-def: #617f99;
-    --code-string: #ab1515;
-    --code-string-2: #80CBC4;
-    --code-comment: #698a63;
-    --code-tag: #80CBC4;
-    --code-meta: #80CBC4;
-    --code-attribute: #FFCB6B;
-    --code-property: #80CBAE;
-    --code-qualifier: #DECB6B;
-    --code-error: rgb(255, 255, 255);
-    --code-error-bg: #EC5F67;
+    /*
+      低饱和度学术配色
+      以深蓝、暗红、深绿、灰色为主，避免高饱和荧光色
+    */
+    --code-linenumber-color: #95a5a6;
+    --code-keyword: #1a5276;
+    --code-operator: #17202a;
+    --code-variable: #1a252f;
+    --code-variable-2: #1a252f;
+    --code-variable-3: #1a252f;
+    --code-builtin: #9a7d0a;
+    --code-atom: #145a32;
+    --code-number: #145a32;
+    --code-def: #1a5276;
+    --code-string: #7b241c;
+    --code-string-2: #7b241c;
+    --code-comment: #7f8c8d;
+    --code-tag: #1a5276;
+    --code-meta: #7f8c8d;
+    --code-attribute: #1a5276;
+    --code-property: #1a5276;
+    --code-qualifier: #9a7d0a;
+    --code-error: #ffffff;
+    --code-error-bg: #c0392b;
 
     --title-text-color: black;
     --text-color: black;

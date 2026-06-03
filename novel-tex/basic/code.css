@@ -1,5 +1,5 @@
 :root {
-    --code-font: "Menlo", "Consolas", var(--base-Chinese-font);
+    --code-font: "Latin Modern Mono", "CMU Typewriter Text", "Menlo", "Consolas", var(--base-Chinese-font);
     --code-font-size: 0.95em;
     --li-code-bg-color: var(--bg-color);
     --li-code-radius: 0.3em;

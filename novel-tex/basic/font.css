@@ -1,8 +1,12 @@
 :root {
-  /* 基础字体设置 */
-  --base-Latin-font: "Times New Roman";
-  --base-Chinese-font: "Source Han Serif SC", "Ping Fang SC", "Microsoft YaHei";
-  --base-font-size: 1.15em;
+  /*
+    基础字体设置
+    优先使用 LaTeX 风格的 Latin Modern / CMU 字体，
+    未安装时回退到 Times New Roman；中文使用思源宋体。
+  */
+  --base-Latin-font: "Latin Modern Roman", "CMU Serif", "Times New Roman";
+  --base-Chinese-font: "Noto Serif SC", "Source Han Serif SC", "PingFang SC", "Microsoft YaHei";
+  --base-font-size: 1em;
 
   /* UI 字体设置 */
   --ui-font: var(--base-Latin-font), var(--base-Chinese-font);
@@ -18,21 +22,24 @@
   --table-title-font: "";
   --table-font: "";
 
-  /* 标题字体（总设置）*/
+  /*
+    标题字体（总设置）
+    LaTeX 风格：标题与正文统一使用衬线字体，仅通过字号/字重区分层次。
+  */
   --heading-Latin-font: var(--base-Latin-font);
   --heading-Chinese-font: var(--base-Chinese-font);
   --heading-font: var(--heading-Latin-font), var(--heading-Chinese-font);
-  --h1-font-size: 1.9em;
+  --h1-font-size: 2em;
   --h2-font-size: 1.5em;
   --h3-font-size: 1.25em;
-  --h4-font-size: 1.15em;
-  --h5-font-size: 1.1em;
-  --h6-font-size: 1.1em;
+  --h4-font-size: 1.1em;
+  --h5-font-size: 1em;
+  --h6-font-size: 0.95em;
 
   /* 粗体样式设置（normal: 400，bold: 700，heavy: 900） */
-  --strong-weight: 900;
+  --strong-weight: 700;
   /* 基础行距 */
-  --base-line-height: 1.618em;
+  --base-line-height: 1.75;
   /* 打印页边距 */
   --set-margin: 1.8cm 2cm 1.8cm 2cm !important;
   /* 目录中是否显示一级标题 */
@@ -61,6 +68,8 @@ strong {
   font-size: var(--base-font-size);
   max-width: 26cm;
   background-color: var(--bg-color);
+  /* 正文数字使用比例宽度，看起来更优雅 */
+  font-variant-numeric: proportional-nums;
 }
 
 #write .md-math-block,
@@ -68,8 +77,8 @@ strong {
 #write p {
   text-align: justify;
   line-height: var(--base-line-height);
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
   color: var(--text-color);
 }
 
@@ -83,46 +92,42 @@ strong {
 #write h4,
 #write h5,
 #write h6 {
-  font-weight: bold;
+  font-weight: 700;
   page-break-after: avoid !important;
   color: var(--title-text-color);
+  font-family: var(--heading-font), serif;
 }
 
 #write h1 {
-  font-family: var(--heading-font), serif;
   text-align: center;
   column-span: all;
   font-size: var(--h1-font-size);
+  line-height: 1.3;
 }
 
 #write h2 {
-  font-family: var(--heading-font), serif;
   font-size: var(--h2-font-size);
+  line-height: 1.3;
 }
 
 #write h3 {
-  font-family: var(--heading-font), serif;
   font-size: var(--h3-font-size);
-  line-height: var(--h3-font-size);
+  line-height: 1.4;
 }
 
 #write h4 {
-  font-family: var(--heading-font), serif;
   font-size: var(--h4-font-size);
-  line-height: var(--h4-font-size);
+  line-height: 1.4;
 }
 
 #write h5 {
-  font-family: var(--heading-font), serif;
   font-size: var(--h5-font-size);
-  line-height: var(--h5-font-size);
+  line-height: 1.4;
 }
 
 #write h6 {
-  font-family: var(--heading-font), serif;
   font-size: var(--h6-font-size);
-  line-height: var(--h5-font-size);
-  /* 没有写错，为了避免行距太小才这么写 */
+  line-height: 1.4;
 }
 
 hr {

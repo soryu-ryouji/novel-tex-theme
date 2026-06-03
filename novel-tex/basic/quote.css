@@ -4,20 +4,20 @@ blockquote {
   font-family: var(--quote-font), var(--base-Latin-font),
     var(--base-Chinese-font), -apple-system, serif;
   font-size: var(--quote-font-size);
-  /* border-left: 1px solid black; */
-  padding-left: 4em;
-  /* 文字离左边框的距离 */
-  padding-right: 4em;
-  /* 左边框离页面边的距离 */
+  padding-left: 2em;
+  padding-right: 2em;
   margin-left: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: var(--text-color);
 }
 
 blockquote p:first-child {
-  padding-top: 1ch;
+  padding-top: 0.5ch;
 }
 
 blockquote p:last-child {
-  padding-bottom: 1ch;
+  padding-bottom: 0.5ch;
 }
 
 blockquote blockquote {
